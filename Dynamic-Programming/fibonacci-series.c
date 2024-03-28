@@ -1,9 +1,10 @@
 #include <stdio.h>
+#define MAX 100
 
 long long fibonacci (int n)
 {
     // use memorization to store the values of the fibonacci series
-    static long long f[100];
+    static long long f[MAX + 1];
     f[0] = 0;
     f[1] = 1;
     for (int i = 2; i < n; i++)
