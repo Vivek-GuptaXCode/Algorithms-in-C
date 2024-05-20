@@ -1,7 +1,7 @@
 # Determine the compiler, Clang preferred
 CC := $(if $(shell command -v clang 2> /dev/null),clang,gcc)
 # Set default compiler flags
-CFLAGS := -Wall -Wextra -pedantic -std=c17
+CFLAGS := -Wall -Wextra -pedantic -std=c17 -march=native
 # Set linker flags
 LDLIBS := -lm -ldl
 # For release builds
